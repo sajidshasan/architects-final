@@ -86,7 +86,7 @@ feature section
     align-items: center;
     display: flex;
     margin-top: 85px;
-    gap: 7px;
+    gap: 73px;
     margin-bottom: 100px;
 }
 
@@ -97,23 +97,25 @@ feature section
 
 .feat-images {
     margin-left: 200px;
+    margin-right: 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-
+    gap: 24px;
 }
 
 .feat-info {
     width: 100%;
-    margin-left: 73px;
+    margin-left: 0px;
     margin-right: 200px;
 }
 
-.feat-image img {
+.feat-image {
     width: 250px;
     height: 250px;
     column-gap: 24px;
     row-gap: 24px;
+
 }
 
 .feat-title,
@@ -143,14 +145,11 @@ feature section
 
 .benefit {
     display: flex;
+
     flex-direction: row;
     margin-right: 10%;
     margin-left: 10%;
     gap: 54px;
-}
-
-.benefit-info {
-    padding-left: 0px;
 }
 
 .benefit div {
@@ -165,6 +164,12 @@ feature section
     padding-left: 21px;
 }
 
+.woman-image {
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+}
+
 .benefit-header {
     color: #131313;
 }
@@ -175,8 +180,6 @@ feature section
 
 .sub-details {
     padding: 30px;
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 .btn-secondary {
@@ -338,6 +341,7 @@ responsive area
     body {
         text-overflow: clip;
         padding: 0;
+        word-wrap: break-word;
     }
 
     .header {
@@ -385,6 +389,7 @@ responsive area
     }
 
     .feat-images {
+        margin-left: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -406,6 +411,7 @@ responsive area
     }
 
     .feat-info {
+        margin-right: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -429,7 +435,10 @@ responsive area
         width: 100%;
         height: auto;
     }
-
+    .woman-image{
+        width: 90%;
+        height: auto;
+    }
     .benefit-header {
         margin: 0;
         padding: 10px;
